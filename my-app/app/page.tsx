@@ -42,6 +42,7 @@ export default function Page() {
         background: '#ffffff',
         width: 170,
         fontWeight: 500,
+        color: '#111827', // ✅ FIX (node text visible)
       },
     }));
 
@@ -76,6 +77,7 @@ export default function Page() {
         border: '2px solid #6366f1',
         background: '#eef2ff',
         width: 170,
+        color: '#111827', // ✅ FIX
       },
     };
 
@@ -182,7 +184,7 @@ export default function Page() {
           }}
         >
           <div>
-            <h2 style={{ margin: 0 }}>Edit Node</h2>
+            <h2 style={{ margin: 0, color: '#111827' }}>Edit Node</h2>
             <p style={{ fontSize: '12px', color: '#6b7280' }}>
               Click inside fields to edit
             </p>
@@ -202,6 +204,9 @@ export default function Page() {
                 border: '1px solid #d1d5db',
                 outline: 'none',
                 fontSize: '14px',
+                background: '#ffffff',
+                color: '#111827', // ✅ FIX
+                caretColor: '#111827', // ✅ cursor visible
               }}
               onFocus={(e) => (e.target.style.border = '1px solid #6366f1')}
               onBlur={(e) => (e.target.style.border = '1px solid #d1d5db')}
@@ -241,6 +246,9 @@ export default function Page() {
                 border: '1px solid #d1d5db',
                 outline: 'none',
                 fontSize: '14px',
+                background: '#ffffff',
+                color: '#111827', // ✅ FIX
+                caretColor: '#111827',
               }}
               onFocus={(e) => (e.target.style.border = '1px solid #6366f1')}
               onBlur={(e) => (e.target.style.border = '1px solid #d1d5db')}
